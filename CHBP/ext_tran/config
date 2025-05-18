@@ -1,0 +1,54 @@
+binary_name:
+cc_option:
+cc_path: 
+jumpoffset: '0x12ff1000'
+objdir: 
+objdump_path: 
+pass_name: testobj_pass
+source_ISA_list:
+- add.uw
+- andn
+- clmul
+- clmulh
+- clmulr
+- clz
+- clzw
+- cpop
+- ctz
+- ctzw
+- max
+- maxu
+- min
+- minu
+- orc.b
+- orn
+- rev8
+- rol
+- rolw
+- ror
+- rori
+- roriw
+- rorw
+- bclr
+- bclri
+- bext
+- bexti
+- binv
+- binvi
+- bset
+- bseti
+- sext.b
+- sext.h
+- sh1add
+- sh1add.uw
+- sh2add
+- sh2add.uw
+- sh3add
+- sh3add.uw
+- slli.uw
+- xnor
+- zext.h
+- zext.w
+target_objname: final
+translate_objname: testobj
+use_gp_data_name: use_gp_data
