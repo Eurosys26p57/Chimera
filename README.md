@@ -35,7 +35,7 @@ The binary patching technology CHBP (Correct and High-performance Binary Patchin
 
 2. Run **tmux** (As our experiments may take a long time, please run all experiments in tmux). **Please strictly follow the tmux commands used in each experiment.**
 
-3. Each experiment will generate a figure in the `./figure` directory. You can download all generated figures to your computer by running `scp -r -P  59348 eurosys2026@210.73.43.1:~/figure figures` with the password in hotcrp **on your computer,** which starts an ssh tunnel and copies all files in `./figures` to your computer.
+3. Each experiment will generate a figure in the `./figures` directory. You can download all generated figures to your computer by running `scp -r -P  59348 eurosys2026@210.73.43.1:~/figures figures` with the password in hotcrp **on your computer,** which starts an ssh tunnel and copies all files in `./figures` to your computer.
 
 
 ## Experiment 1: End-to-end heterogeneous computing performance
