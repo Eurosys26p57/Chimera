@@ -9,7 +9,99 @@ Through binary patching, Chimera enables the upgrade or downgrade of instruction
 The binary patching technology CHBP (Correct and High-performance Binary Patching) employed by Chimera ensures high performance and correctness:
 - By means of binary patching for binary rewriting, CHBP avoids using traps and instead adopts multiple instructions as long-range jump trampolines to guarantee its performance.
 - Chimera ensures that all errors arising from multi-instruction trampolines can be detected and recovered through a passive error mechanism, thereby safeguarding correctness
-## Getting Started
+
+# Artifact Evaluation Guidance
+
+## Artifact Check-list
+
+- Code link: https://github.com/Eurosys26p57/Chimera
+- OS Version: Bianbu 2.0.4 or Ubuntu 22.04
+- Hardware: Banana Pi BPI-F3
+- Python version: >= 3.11.2
+- Metrics: latency of heterogeneous computing workloads and performance overhead of rewritten binaries
+- Expected runtime:
+  - Experiment 1: about 10 minutes
+  - Experiment 2A: about 5 hours
+
+> **Note: Experiments allow only one person to run at a time. Reviewers should coordinate time slots.**
+
+---
+
+# Experiments
+
+## Connect to the server
+
+1. Run `ssh -p 59348 eurosys2026@210.73.43.1` using the password in hotcrp
+
+2. Run **tmux** (As our experiments may take a long time, please run all experiments in tmux). **Please strictly follow the tmux commands used in each experiment.**
+
+3. Each experiment will generate a figure in the `./figure` directory. You can download all generated figures to your computer by running `scp -r -P  59348 eurosys2026@210.73.43.1:~/figure figures` with the password in hotcrp **on your computer,** which starts an ssh tunnel and copies all files in `./figures` to your computer.
+
+
+## Experiment 1: End-to-end heterogeneous computing performance
+
+This experiment runs \texttt{Chimera/MELF/Safer/FAM} with matrix and integer tasks and reports each system's end-to-end latency. This experiment will take about 10 minutes.
+
+**Run experiment:**
+- Run tmux: `tmux new -s eurosys2026exp1`
+- Run Command: `/home/eurosys2026/runExp1.sh`
+- After that, you can detach tmux by running `tmux detach` and log out of the remote terminal by running `exit` (the session will continue running in the background).
+- To check the results later, you can simply run `ssh -p 59348 eurosys2026@210.73.43.1` using the password in hotcrp to log into the server and run `tmux attach -t eurosys2026exp1` to reattach to this session.
+- Finally, please run `exit` to **exit tmux** and run `exit` to log out the server.
+
+**Output:**
+- A pdf file named `./figure/end2endperformance.pdf`, containing the throughput vs. latency of Chimera and baseline systems.
+- You can find the log file for generating figures in `./logs/exp1/`
+
+**Expected results:**
+- `Chimera` achieves lower latency than `Safer` and `FAM`.
+- `Chimera` exhibits similar performance compared to compilation-based `MELF`.
+
+---
+
+## Experiment 2A: Performance of rewritten binaries ("Blender" benchmark in SPEC CPU2017)
+
+This experiment runs "Blender" benchmark in SPEC CPU2017 rewritten by `CHBP/Safer/ARMore/strawman patching` and reports the performance overhead of each rewritten binary relative to the original, which **takes about 5 hours**.
+
+We selected this benchmark for 3 reasons:
+- Its indirect jump counts and extension instruction counts are both mid-range among all benchmarks, so using it as the baseline allows a fair comparison of Chimera and the other baselines' performance.
+- Its code size is relatively large (7.31 MB) and requires SMILE trampolines to perform long jumps.
+- It runs relatively quickly compared to the other benchmarks.
+
+**We recommend running only this experiment**; if you need to run the full SPEC CPU2017 suite, please follow experiment 2B, which requires roughly one week.
+
+**Run experiment:**
+- Run tmux: `tmux new -s eurosys2026exp2A`
+- Run Command: `/home/eurosys2026/runExp2A.sh`
+- After that, you can detach tmux by running `tmux detach` and log out of the remote terminal by running `exit` (the session will continue running in the background).
+- To check the results later, you can simply run `ssh -p 59348 eurosys2026@210.73.43.1` using the password in hotcrp to log into the server and run `tmux attach -t eurosys2026exp2A` to reattach to this session.
+- Finally, please run `exit` to **exit tmux** and run `exit` to log out the server.
+
+**Output:**
+- A pdf file named `./figure/binaryperformance.pdf`, containing the performance overhead of Chimera and baseline systems.
+- You can find the log file for generating figures in `./logs/exp2a/`
+
+**Expected results:**
+- Because only the Blender benchmark was run, the final result chart is expected to be a subset of the full results.
+- `CHBP` achieves the lowest performance overhead among all baselines.
+- Performance overhead of `CHBP` is only about 5%.
+
+---
+
+## Experiment 2B: Performance of rewritten binaries (Entire SPEC CPU2017)
+
+This experiment runs the entire SPEC CPU2017 benchmarks to evaluate `Chimera` and other baselines, which **requires roughly one week**.
+
+**Run experiment:**
+- Run tmux: `tmux new -s eurosys2026exp2B`
+- Run Command: `/home/eurosys2026/runExp2B.sh`
+- After that, you can detach tmux by running `tmux detach` and log out of the remote terminal by running `exit` (the session will continue running in the background).
+- To check the results later, you can simply run `ssh -p 59348 eurosys2026@210.73.43.1` using the password in hotcrp to log into the server and run `tmux attach -t eurosys2026exp2B` to reattach to this session.
+- Finally, please run `exit` to **exit tmux** and run `exit` to log out the server.
+
+This experiment will take about one week to complete. The output and expected results are the same as in Experiment 2A.
+
+## Getting Started (if you don't use our server)
 - Installation
 - Run a demo
 ## Setup and Installation
