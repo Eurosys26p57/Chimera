@@ -144,11 +144,13 @@ Then, install Chimera
 ```shell
  git clone https://github.com/Eurosys26p57/Chimera
  cd Chimera
- pip install -r requirement.txt
  #compile binary tools
- cd binarytools
- make
- cd ..
+ cd binarytools/elfdiet 
+ make clean && make
+ cd ../trampolineinst 
+ make clean && make
+ #back to Chimera/CHBP
+ cd ../..
  ./loadmod.sh
 ```
 
