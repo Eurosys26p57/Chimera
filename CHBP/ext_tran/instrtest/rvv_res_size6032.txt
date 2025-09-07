@@ -1,0 +1,429 @@
+==================== Ratio 0.0 ====================
+=== Exp1 Strict Isolation ===
+[Fibonacci]
+  Scalar native: 3582.75ms
+[Matrix]
+  Vector native: 0.00ms
+Total latency: 3592.36ms
+
+=== Exp2 Vector Stealing ===
+[Fibonacci]
+  Scalar native: 3572.59ms
+  Vector stolen: 1736.68ms
+  Total: 5309.27ms
+[Matrix]
+  Vector native: 0.00ms
+Total latency: 1847.12ms
+
+=== Exp3 Bidirectional Stealing ===
+[Fibonacci]
+  Scalar native: 3580.45ms
+  Vector stolen: 1740.13ms
+  Total: 5320.58ms
+[Matrix]
+  Vector native: 0.00ms
+  Scalar stolen: 0.00ms
+  Total: 0.00ms
+Total latency: 1849.14ms
+
+=== Exp4 Bidirectional Scalar Stealing ===
+[Scalar Matrix Multiply]
+  Vector Pool Native: 0.00ms
+  Scalar Pool Stolen: 0.00ms
+[Fibonacci]
+  Scalar Native: 3562.10ms
+  Vector Stolen: 3520.88ms
+Total latency: 1786.18ms
+
+
+
+==================== Ratio 0.1 ====================
+=== Exp1 Strict Isolation ===
+[Fibonacci]
+  Scalar native: 3268.76ms
+[Matrix]
+  Vector native: 566.80ms
+Total latency: 3282.48ms
+
+=== Exp2 Vector Stealing ===
+[Fibonacci]
+  Scalar native: 3268.74ms
+  Vector stolen: 1275.12ms
+  Total: 4543.86ms
+[Matrix]
+  Vector native: 566.71ms
+Total latency: 2000.00ms
+
+=== Exp3 Bidirectional Stealing ===
+[Fibonacci]
+  Scalar native: 3186.16ms
+  Vector stolen: 1157.79ms
+  Total: 4343.96ms
+[Matrix]
+  Vector native: 695.25ms
+  Scalar stolen: 0.00ms
+  Total: 695.25ms
+Total latency: 2038.98ms
+
+=== Exp4 Bidirectional Scalar Stealing ===
+[Scalar Matrix Multiply]
+  Vector Pool Native: 2093.33ms
+  Scalar Pool Stolen: 0.00ms
+[Fibonacci]
+  Scalar Native: 3202.33ms
+  Vector Stolen: 1696.77ms
+Total latency: 2674.05ms
+
+
+
+==================== Ratio 0.2 ====================
+=== Exp1 Strict Isolation ===
+[Fibonacci]
+  Scalar native: 2941.28ms
+[Matrix]
+  Vector native: 1162.22ms
+Total latency: 2947.84ms
+
+=== Exp2 Vector Stealing ===
+[Fibonacci]
+  Scalar native: 2919.81ms
+  Vector stolen: 722.32ms
+  Total: 3642.13ms
+[Matrix]
+  Vector native: 1170.10ms
+Total latency: 2211.42ms
+
+=== Exp3 Bidirectional Stealing ===
+[Fibonacci]
+  Scalar native: 2904.72ms
+  Vector stolen: 662.41ms
+  Total: 3567.13ms
+[Matrix]
+  Vector native: 1240.27ms
+  Scalar stolen: 0.00ms
+  Total: 1240.27ms
+Total latency: 2254.03ms
+
+=== Exp4 Bidirectional Scalar Stealing ===
+[Scalar Matrix Multiply]
+  Vector Pool Native: 3352.68ms
+  Scalar Pool Stolen: 492.69ms
+[Fibonacci]
+  Scalar Native: 2887.71ms
+  Vector Stolen: 662.41ms
+Total latency: 3403.21ms
+
+
+
+==================== Ratio 0.3 ====================
+=== Exp1 Strict Isolation ===
+[Fibonacci]
+  Scalar native: 2429.48ms
+[Matrix]
+  Vector native: 2021.35ms
+Total latency: 2553.48ms
+
+=== Exp2 Vector Stealing ===
+[Fibonacci]
+  Scalar native: 2517.94ms
+  Vector stolen: 81.84ms
+  Total: 2599.78ms
+[Matrix]
+  Vector native: 1868.97ms
+Total latency: 2449.72ms
+
+=== Exp3 Bidirectional Stealing ===
+[Fibonacci]
+  Scalar native: 2505.21ms
+  Vector stolen: 53.38ms
+  Total: 2558.59ms
+[Matrix]
+  Vector native: 1901.32ms
+  Scalar stolen: 0.00ms
+  Total: 1901.32ms
+Total latency: 2469.79ms
+
+=== Exp4 Bidirectional Scalar Stealing ===
+[Scalar Matrix Multiply]
+  Vector Pool Native: 4326.86ms
+  Scalar Pool Stolen: 1898.55ms
+[Fibonacci]
+  Scalar Native: 2461.20ms
+  Vector Stolen: 53.38ms
+Total latency: 4398.34ms
+
+
+
+==================== Ratio 0.4 ====================
+=== Exp1 Strict Isolation ===
+[Fibonacci]
+  Scalar native: 2112.11ms
+[Matrix]
+  Vector native: 2598.70ms
+Total latency: 3279.10ms
+
+=== Exp2 Vector Stealing ===
+[Fibonacci]
+  Scalar native: 2134.46ms
+  Vector stolen: 0.00ms
+  Total: 2134.46ms
+[Matrix]
+  Vector native: 2541.55ms
+Total latency: 3205.48ms
+
+=== Exp3 Bidirectional Stealing ===
+[Fibonacci]
+  Scalar native: 2176.06ms
+  Vector stolen: 0.00ms
+  Total: 2176.06ms
+[Matrix]
+  Vector native: 1969.31ms
+  Scalar stolen: 240.95ms
+  Total: 2210.26ms
+Total latency: 2489.78ms
+
+=== Exp4 Bidirectional Scalar Stealing ===
+[Scalar Matrix Multiply]
+  Vector Pool Native: 5053.47ms
+  Scalar Pool Stolen: 2929.51ms
+[Fibonacci]
+  Scalar Native: 2145.36ms
+  Vector Stolen: 0.00ms
+Total latency: 5132.93ms
+
+
+
+==================== Ratio 0.5 ====================
+=== Exp1 Strict Isolation ===
+[Fibonacci]
+  Scalar native: 1815.98ms
+[Matrix]
+  Vector native: 3126.86ms
+Total latency: 3949.51ms
+
+=== Exp2 Vector Stealing ===
+[Fibonacci]
+  Scalar native: 1817.36ms
+  Vector stolen: 0.00ms
+  Total: 1817.36ms
+[Matrix]
+  Vector native: 3124.76ms
+Total latency: 3944.66ms
+
+=== Exp3 Bidirectional Stealing ===
+[Fibonacci]
+  Scalar native: 1793.41ms
+  Vector stolen: 0.00ms
+  Total: 1793.41ms
+[Matrix]
+  Vector native: 1974.32ms
+  Scalar stolen: 564.45ms
+  Total: 2538.77ms
+Total latency: 2503.17ms
+
+=== Exp4 Bidirectional Scalar Stealing ===
+[Scalar Matrix Multiply]
+  Vector Pool Native: 5783.35ms
+  Scalar Pool Stolen: 3995.18ms
+[Fibonacci]
+  Scalar Native: 1835.36ms
+  Vector Stolen: 0.00ms
+Total latency: 5899.29ms
+
+
+
+==================== Ratio 0.6 ====================
+=== Exp1 Strict Isolation ===
+[Fibonacci]
+  Scalar native: 1404.38ms
+[Matrix]
+  Vector native: 3855.16ms
+Total latency: 4869.78ms
+
+=== Exp2 Vector Stealing ===
+[Fibonacci]
+  Scalar native: 1426.38ms
+  Vector stolen: 0.00ms
+  Total: 1426.38ms
+[Matrix]
+  Vector native: 3834.18ms
+Total latency: 4858.64ms
+
+=== Exp3 Bidirectional Stealing ===
+[Fibonacci]
+  Scalar native: 1287.76ms
+  Vector stolen: 0.00ms
+  Total: 1287.76ms
+[Matrix]
+  Vector native: 1987.29ms
+  Scalar stolen: 997.58ms
+  Total: 2984.87ms
+Total latency: 2523.92ms
+
+=== Exp4 Bidirectional Scalar Stealing ===
+[Scalar Matrix Multiply]
+  Vector Pool Native: 6775.61ms
+  Scalar Pool Stolen: 5367.26ms
+[Fibonacci]
+  Scalar Native: 1417.19ms
+  Vector Stolen: 0.00ms
+Total latency: 6883.70ms
+
+
+
+==================== Ratio 0.7 ====================
+=== Exp1 Strict Isolation ===
+[Fibonacci]
+  Scalar native: 1138.07ms
+[Matrix]
+  Vector native: 4342.43ms
+Total latency: 5486.42ms
+
+=== Exp2 Vector Stealing ===
+[Fibonacci]
+  Scalar native: 1040.36ms
+  Vector stolen: 0.00ms
+  Total: 1040.36ms
+[Matrix]
+  Vector native: 4493.26ms
+Total latency: 5675.54ms
+
+=== Exp3 Bidirectional Stealing ===
+[Fibonacci]
+  Scalar native: 970.99ms
+  Vector stolen: 0.00ms
+  Total: 970.99ms
+[Matrix]
+  Vector native: 1994.09ms
+  Scalar stolen: 1260.53ms
+  Total: 3254.62ms
+Total latency: 2531.81ms
+
+=== Exp4 Bidirectional Scalar Stealing ===
+[Scalar Matrix Multiply]
+  Vector Pool Native: 7475.93ms
+  Scalar Pool Stolen: 6395.10ms
+[Fibonacci]
+  Scalar Native: 1083.35ms
+  Vector Stolen: 0.00ms
+Total latency: 7583.50ms
+
+
+
+==================== Ratio 0.8 ====================
+=== Exp1 Strict Isolation ===
+[Fibonacci]
+  Scalar native: 796.25ms
+[Matrix]
+  Vector native: 4923.65ms
+Total latency: 6211.86ms
+
+=== Exp2 Vector Stealing ===
+[Fibonacci]
+  Scalar native: 753.90ms
+  Vector stolen: 0.00ms
+  Total: 753.90ms
+[Matrix]
+  Vector native: 4987.45ms
+Total latency: 6290.64ms
+
+=== Exp3 Bidirectional Stealing ===
+[Fibonacci]
+  Scalar native: 665.52ms
+  Vector stolen: 0.00ms
+  Total: 665.52ms
+[Matrix]
+  Vector native: 1990.54ms
+  Scalar stolen: 1513.23ms
+  Total: 3503.76ms
+Total latency: 2531.53ms
+
+=== Exp4 Bidirectional Scalar Stealing ===
+[Scalar Matrix Multiply]
+  Vector Pool Native: 8427.70ms
+  Scalar Pool Stolen: 7694.18ms
+[Fibonacci]
+  Scalar Native: 742.95ms
+  Vector Stolen: 0.00ms
+Total latency: 8558.82ms
+
+
+
+==================== Ratio 0.9 ====================
+=== Exp1 Strict Isolation ===
+[Fibonacci]
+  Scalar native: 408.59ms
+[Matrix]
+  Vector native: 5645.64ms
+Total latency: 7121.78ms
+
+=== Exp2 Vector Stealing ===
+[Fibonacci]
+  Scalar native: 390.42ms
+  Vector stolen: 0.00ms
+  Total: 390.42ms
+[Matrix]
+  Vector native: 5668.44ms
+Total latency: 7146.98ms
+
+=== Exp3 Bidirectional Stealing ===
+[Fibonacci]
+  Scalar native: 314.09ms
+  Vector stolen: 0.00ms
+  Total: 314.09ms
+[Matrix]
+  Vector native: 2014.85ms
+  Scalar stolen: 1814.95ms
+  Total: 3829.80ms
+Total latency: 2551.65ms
+
+=== Exp4 Bidirectional Scalar Stealing ===
+[Scalar Matrix Multiply]
+  Vector Pool Native: 9108.99ms
+  Scalar Pool Stolen: 8719.95ms
+[Fibonacci]
+  Scalar Native: 412.65ms
+  Vector Stolen: 0.00ms
+Total latency: 9261.21ms
+
+
+
+==================== Ratio 1.0 ====================
+=== Exp1 Strict Isolation ===
+[Fibonacci]
+  Scalar native: 0.00ms
+[Matrix]
+  Vector native: 6382.47ms
+Total latency: 8047.72ms
+
+=== Exp2 Vector Stealing ===
+[Fibonacci]
+  Scalar native: 0.00ms
+  Vector stolen: 0.00ms
+  Total: 0.00ms
+[Matrix]
+  Vector native: 6327.44ms
+Total latency: 7992.00ms
+
+=== Exp3 Bidirectional Stealing ===
+[Fibonacci]
+  Scalar native: 0.00ms
+  Vector stolen: 0.00ms
+  Total: 0.00ms
+[Matrix]
+  Vector native: 2132.62ms
+  Scalar stolen: 2133.06ms
+  Total: 4265.67ms
+Total latency: 2713.89ms
+
+=== Exp4 Bidirectional Scalar Stealing ===
+[Scalar Matrix Multiply]
+  Vector Pool Native: 10811.18ms
+  Scalar Pool Stolen: 10707.98ms
+[Fibonacci]
+  Scalar Native: 0.00ms
+  Vector Stolen: 0.00ms
+Total latency: 10971.28ms
+
+
+

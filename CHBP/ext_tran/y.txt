@@ -1,0 +1,16 @@
+CodeBlock(startaddr='0x10d00', endaddr='0x10d0c',jumpto='[]', instr_num='4':
+vsetvli a1, a2, 0xc
+lui a0, 0x11
+addi a0, a0, -0x109
+auipc ra, 0x0
+CodeBlock(startaddr='0x10d24', endaddr='0x10d48',jumpto='[]', instr_num='10':
+vsetvli a1, a1, 0xc
+sext.w a2, a0
+slli a2, a2, 0x3
+add a3, s3, a2
+vle64.v v1, (a3)
+add a2, s2, a2
+vle64.v v2, (a2)
+vfadd.vv v1, v2, v1
+addw a0, a0, a1
+vse64.v v1, (a2)

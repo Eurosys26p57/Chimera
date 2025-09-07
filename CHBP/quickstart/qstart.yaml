@@ -1,0 +1,40 @@
+#Compiler to compile disassembly to object file
+cc_Path: "Path/to/clangorgcc"
+#Compile option, the compiler should support all the extensions
+cc_option: 
+  - "--target=riscv64-unknown-linux-gnu"
+  - "-march=rv64gcvb"
+  - "-c"
+  - "-o"
+#objdump path
+objdumpPath: "/Path/to/objdump"
+#objdump option
+objdumpOption:
+  - "-d"
+  - "--target=riscv64-unknown-linux-gnu"
+  - "-march=rv64gcv"
+#path of original binary
+binary_name: "test1"
+#output name
+Outputbinary: "test1.rewritten"
+#tmp dir to save compiled object files
+objdir: "tmp"
+#if the original binary has C extension (default: True)
+compressedExt: True
+#final file after combining all object files
+target_objname: "final"
+#file to save error handling table
+fault_handling_name: "faulttable"
+#MMViews of target instructions
+MMViews:
+- name: "RVVB"
+  #jump offset of each trampoline
+  jumpoffset: "0x12ff1000"
+  target_ISA: RVI
+  source_ISA: RVB
+  #additional source instructions
+  source_ISA_list:
+    - "vle64.v"
+    - "vfadd.vv"
+    - "vsetvli"
+    - "vse64.v"

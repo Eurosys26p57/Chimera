@@ -1,0 +1,552 @@
+[
+  {
+    "ratio": 0.0,
+    "experiments": [
+      {
+        "name": "Exp1 Strict Isolation",
+        "fibonacci": {
+          "Scalar native": 165.36
+        },
+        "matrix": {
+          "Vector native": 0.0
+        },
+        "total_latency": 173.26
+      },
+      {
+        "name": "Exp2 Vector Stealing",
+        "fibonacci": {
+          "Scalar native": 166.57,
+          "Vector stolen": 11.08,
+          "Total": 177.65
+        },
+        "matrix": {
+          "Vector native": 0.0
+        },
+        "total_latency": 163.0
+      },
+      {
+        "name": "Exp3 Bidirectional Stealing",
+        "fibonacci": {
+          "Scalar native": 165.88,
+          "Vector stolen": 5.7,
+          "Total": 171.59
+        },
+        "matrix": {
+          "Vector native": 0.0,
+          "Scalar stolen": 0.0,
+          "Total": 0.0
+        },
+        "total_latency": 162.83
+      },
+      {
+        "name": "Exp4 Bidirectional Scalar Stealing",
+        "fibonacci": {
+          "Scalar Native": 167.49,
+          "Vector Stolen": 20.62
+        },
+        "matrix": {},
+        "total_latency": 163.05
+      }
+    ]
+  },
+  {
+    "ratio": 0.1,
+    "experiments": [
+      {
+        "name": "Exp1 Strict Isolation",
+        "fibonacci": {
+          "Scalar native": 153.18
+        },
+        "matrix": {
+          "Vector native": 81.41
+        },
+        "total_latency": 163.02
+      },
+      {
+        "name": "Exp2 Vector Stealing",
+        "fibonacci": {
+          "Scalar native": 154.27,
+          "Vector stolen": 3.67,
+          "Total": 157.95
+        },
+        "matrix": {
+          "Vector native": 82.44
+        },
+        "total_latency": 162.79
+      },
+      {
+        "name": "Exp3 Bidirectional Stealing",
+        "fibonacci": {
+          "Scalar native": 153.2,
+          "Vector stolen": 12.93,
+          "Total": 166.13
+        },
+        "matrix": {
+          "Vector native": 100.24,
+          "Scalar stolen": 0.0,
+          "Total": 100.24
+        },
+        "total_latency": 152.53
+      },
+      {
+        "name": "Exp4 Bidirectional Scalar Stealing",
+        "fibonacci": {
+          "Scalar Native": 151.61,
+          "Vector Stolen": 12.93
+        },
+        "matrix": {},
+        "total_latency": 233.21
+      }
+    ]
+  },
+  {
+    "ratio": 0.2,
+    "experiments": [
+      {
+        "name": "Exp1 Strict Isolation",
+        "fibonacci": {
+          "Scalar native": 140.43
+        },
+        "matrix": {
+          "Vector native": 168.79
+        },
+        "total_latency": 223.46
+      },
+      {
+        "name": "Exp2 Vector Stealing",
+        "fibonacci": {
+          "Scalar native": 140.01,
+          "Vector stolen": 0.0,
+          "Total": 140.01
+        },
+        "matrix": {
+          "Vector native": 169.63
+        },
+        "total_latency": 223.18
+      },
+      {
+        "name": "Exp3 Bidirectional Stealing",
+        "fibonacci": {
+          "Scalar native": 137.38,
+          "Vector stolen": 0.0,
+          "Total": 137.38
+        },
+        "matrix": {
+          "Vector native": 161.38,
+          "Scalar stolen": 60.2,
+          "Total": 221.59
+        },
+        "total_latency": 212.98
+      },
+      {
+        "name": "Exp4 Bidirectional Scalar Stealing",
+        "fibonacci": {
+          "Scalar Native": 137.54,
+          "Vector Stolen": 0.0
+        },
+        "matrix": {},
+        "total_latency": 364.22
+      }
+    ]
+  },
+  {
+    "ratio": 0.3,
+    "experiments": [
+      {
+        "name": "Exp1 Strict Isolation",
+        "fibonacci": {
+          "Scalar native": 116.74
+        },
+        "matrix": {
+          "Vector native": 295.28
+        },
+        "total_latency": 384.57
+      },
+      {
+        "name": "Exp2 Vector Stealing",
+        "fibonacci": {
+          "Scalar native": 120.24,
+          "Vector stolen": 0.0,
+          "Total": 120.24
+        },
+        "matrix": {
+          "Vector native": 273.15
+        },
+        "total_latency": 354.08
+      },
+      {
+        "name": "Exp3 Bidirectional Stealing",
+        "fibonacci": {
+          "Scalar native": 119.9,
+          "Vector stolen": 0.0,
+          "Total": 119.9
+        },
+        "matrix": {
+          "Vector native": 250.07,
+          "Scalar stolen": 86.13,
+          "Total": 336.2
+        },
+        "total_latency": 323.89
+      },
+      {
+        "name": "Exp4 Bidirectional Scalar Stealing",
+        "fibonacci": {
+          "Scalar Native": 116.34,
+          "Vector Stolen": 0.0
+        },
+        "matrix": {},
+        "total_latency": 535.37
+      }
+    ]
+  },
+  {
+    "ratio": 0.4,
+    "experiments": [
+      {
+        "name": "Exp1 Strict Isolation",
+        "fibonacci": {
+          "Scalar native": 100.8
+        },
+        "matrix": {
+          "Vector native": 379.57
+        },
+        "total_latency": 495.49
+      },
+      {
+        "name": "Exp2 Vector Stealing",
+        "fibonacci": {
+          "Scalar native": 101.19,
+          "Vector stolen": 0.0,
+          "Total": 101.19
+        },
+        "matrix": {
+          "Vector native": 371.94
+        },
+        "total_latency": 485.14
+      },
+      {
+        "name": "Exp3 Bidirectional Stealing",
+        "fibonacci": {
+          "Scalar native": 104.15,
+          "Vector stolen": 0.0,
+          "Total": 104.15
+        },
+        "matrix": {
+          "Vector native": 287.09,
+          "Scalar stolen": 229.67,
+          "Total": 516.76
+        },
+        "total_latency": 374.36
+      },
+      {
+        "name": "Exp4 Bidirectional Scalar Stealing",
+        "fibonacci": {
+          "Scalar Native": 103.3,
+          "Vector Stolen": 0.0
+        },
+        "matrix": {},
+        "total_latency": 646.22
+      }
+    ]
+  },
+  {
+    "ratio": 0.5,
+    "experiments": [
+      {
+        "name": "Exp1 Strict Isolation",
+        "fibonacci": {
+          "Scalar native": 87.22
+        },
+        "matrix": {
+          "Vector native": 456.41
+        },
+        "total_latency": 595.99
+      },
+      {
+        "name": "Exp2 Vector Stealing",
+        "fibonacci": {
+          "Scalar native": 86.32,
+          "Vector stolen": 0.0,
+          "Total": 86.32
+        },
+        "matrix": {
+          "Vector native": 456.17
+        },
+        "total_latency": 585.74
+      },
+      {
+        "name": "Exp3 Bidirectional Stealing",
+        "fibonacci": {
+          "Scalar native": 86.15,
+          "Vector stolen": 0.0,
+          "Total": 86.15
+        },
+        "matrix": {
+          "Vector native": 356.62,
+          "Scalar stolen": 325.6,
+          "Total": 682.22
+        },
+        "total_latency": 464.82
+      },
+      {
+        "name": "Exp4 Bidirectional Scalar Stealing",
+        "fibonacci": {
+          "Scalar Native": 86.98,
+          "Vector Stolen": 0.0
+        },
+        "matrix": {},
+        "total_latency": 787.06
+      }
+    ]
+  },
+  {
+    "ratio": 0.6,
+    "experiments": [
+      {
+        "name": "Exp1 Strict Isolation",
+        "fibonacci": {
+          "Scalar native": 67.18
+        },
+        "matrix": {
+          "Vector native": 561.75
+        },
+        "total_latency": 726.83
+      },
+      {
+        "name": "Exp2 Vector Stealing",
+        "fibonacci": {
+          "Scalar native": 67.78,
+          "Vector stolen": 0.0,
+          "Total": 67.78
+        },
+        "matrix": {
+          "Vector native": 560.72
+        },
+        "total_latency": 726.57
+      },
+      {
+        "name": "Exp3 Bidirectional Stealing",
+        "fibonacci": {
+          "Scalar native": 62.06,
+          "Vector stolen": 0.0,
+          "Total": 62.06
+        },
+        "matrix": {
+          "Vector native": 450.67,
+          "Scalar stolen": 451.52,
+          "Total": 902.19
+        },
+        "total_latency": 585.55
+      },
+      {
+        "name": "Exp4 Bidirectional Scalar Stealing",
+        "fibonacci": {
+          "Scalar Native": 65.86,
+          "Vector Stolen": 0.0
+        },
+        "matrix": {},
+        "total_latency": 948.11
+      }
+    ]
+  },
+  {
+    "ratio": 0.7,
+    "experiments": [
+      {
+        "name": "Exp1 Strict Isolation",
+        "fibonacci": {
+          "Scalar native": 54.4
+        },
+        "matrix": {
+          "Vector native": 628.6
+        },
+        "total_latency": 817.47
+      },
+      {
+        "name": "Exp2 Vector Stealing",
+        "fibonacci": {
+          "Scalar native": 49.68,
+          "Vector stolen": 0.0,
+          "Total": 49.68
+        },
+        "matrix": {
+          "Vector native": 656.74
+        },
+        "total_latency": 847.59
+      },
+      {
+        "name": "Exp3 Bidirectional Stealing",
+        "fibonacci": {
+          "Scalar native": 46.93,
+          "Vector stolen": 0.0,
+          "Total": 46.93
+        },
+        "matrix": {
+          "Vector native": 502.96,
+          "Scalar stolen": 523.12,
+          "Total": 1026.08
+        },
+        "total_latency": 656.09
+      },
+      {
+        "name": "Exp4 Bidirectional Scalar Stealing",
+        "fibonacci": {
+          "Scalar Native": 52.22,
+          "Vector Stolen": 0.0
+        },
+        "matrix": {},
+        "total_latency": 1069.19
+      }
+    ]
+  },
+  {
+    "ratio": 0.8,
+    "experiments": [
+      {
+        "name": "Exp1 Strict Isolation",
+        "fibonacci": {
+          "Scalar native": 37.37
+        },
+        "matrix": {
+          "Vector native": 719.9
+        },
+        "total_latency": 928.32
+      },
+      {
+        "name": "Exp2 Vector Stealing",
+        "fibonacci": {
+          "Scalar native": 36.36,
+          "Vector stolen": 0.0,
+          "Total": 36.36
+        },
+        "matrix": {
+          "Vector native": 729.96
+        },
+        "total_latency": 938.27
+      },
+      {
+        "name": "Exp3 Bidirectional Stealing",
+        "fibonacci": {
+          "Scalar native": 31.66,
+          "Vector stolen": 0.0,
+          "Total": 31.66
+        },
+        "matrix": {
+          "Vector native": 560.11,
+          "Scalar stolen": 597.87,
+          "Total": 1157.98
+        },
+        "total_latency": 726.76
+      },
+      {
+        "name": "Exp4 Bidirectional Scalar Stealing",
+        "fibonacci": {
+          "Scalar Native": 35.81,
+          "Vector Stolen": 0.0
+        },
+        "matrix": {},
+        "total_latency": 1220.75
+      }
+    ]
+  },
+  {
+    "ratio": 0.9,
+    "experiments": [
+      {
+        "name": "Exp1 Strict Isolation",
+        "fibonacci": {
+          "Scalar native": 19.63
+        },
+        "matrix": {
+          "Vector native": 820.57
+        },
+        "total_latency": 1059.24
+      },
+      {
+        "name": "Exp2 Vector Stealing",
+        "fibonacci": {
+          "Scalar native": 17.9,
+          "Vector stolen": 0.0,
+          "Total": 17.9
+        },
+        "matrix": {
+          "Vector native": 827.53
+        },
+        "total_latency": 1069.33
+      },
+      {
+        "name": "Exp3 Bidirectional Stealing",
+        "fibonacci": {
+          "Scalar native": 14.77,
+          "Vector stolen": 0.0,
+          "Total": 14.77
+        },
+        "matrix": {
+          "Vector native": 624.43,
+          "Scalar stolen": 687.84,
+          "Total": 1312.26
+        },
+        "total_latency": 817.5
+      },
+      {
+        "name": "Exp4 Bidirectional Scalar Stealing",
+        "fibonacci": {
+          "Scalar Native": 19.29,
+          "Vector Stolen": 0.0
+        },
+        "matrix": {},
+        "total_latency": 1340.94
+      }
+    ]
+  },
+  {
+    "ratio": 1.0,
+    "experiments": [
+      {
+        "name": "Exp1 Strict Isolation",
+        "fibonacci": {
+          "Scalar native": 0.0
+        },
+        "matrix": {
+          "Vector native": 926.02
+        },
+        "total_latency": 1190.4
+      },
+      {
+        "name": "Exp2 Vector Stealing",
+        "fibonacci": {
+          "Scalar native": 0.0,
+          "Vector stolen": 0.0,
+          "Total": 0.0
+        },
+        "matrix": {
+          "Vector native": 925.58
+        },
+        "total_latency": 1190.13
+      },
+      {
+        "name": "Exp3 Bidirectional Stealing",
+        "fibonacci": {
+          "Scalar native": 0.0,
+          "Vector stolen": 0.0,
+          "Total": 0.0
+        },
+        "matrix": {
+          "Vector native": 701.22,
+          "Scalar stolen": 699.09,
+          "Total": 1400.31
+        },
+        "total_latency": 907.88
+      },
+      {
+        "name": "Exp4 Bidirectional Scalar Stealing",
+        "fibonacci": {
+          "Scalar Native": 0.0,
+          "Vector Stolen": 0.0
+        },
+        "matrix": {},
+        "total_latency": 1552.41
+      }
+    ]
+  }
+]
