@@ -135,6 +135,7 @@ Chimera requires the following dependencies:
   - lief (0.16.0)
 - Kernel prepare
   - Install Chimera kernel ( for Banana Pi BPI-F3) following Chimera-kernel](https://github.com/Eurosys26p57/Chimera-kernel)
+- If you can't access a risc-v hardware, you can use qemu by the [qemu guidance](https://github.com/Eurosys26p57/Chimera/blob/master/QEMU.md)
 
 ## Get the Code and Build
 
