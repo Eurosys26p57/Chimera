@@ -1,0 +1,45 @@
+From 0544799d0532708b7380232bda8d9191b372f01d Mon Sep 17 00:00:00 2001
+From: lizhiyuan241 <lizhiyuan241@mails.ucas.ac.cn>
+Date: Tue, 29 Apr 2025 15:04:14 +0800
+Subject: [PATCH 1/2] leave vector unchanged and setup riscv config for bpf
+ etc.
+
+---
+ arch/riscv/configs/k1_defconfig | 2 ++
+ arch/riscv/kernel/traps.c       | 2 +-
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/arch/riscv/configs/k1_defconfig b/arch/riscv/configs/k1_defconfig
+index 70a304d07674..ee31bfa03440 100644
+--- a/arch/riscv/configs/k1_defconfig
++++ b/arch/riscv/configs/k1_defconfig
+@@ -61,6 +61,7 @@ CONFIG_CPU_FREQ_GOV_SCHEDUTIL=y
+ # CONFIG_ARM_BRCMSTB_AVS_CPUFREQ is not set
+ # CONFIG_ARM_MEDIATEK_CPUFREQ_HW is not set
+ CONFIG_SPACEMIT_K1X_CPUFREQ=y
++CONFIG_KPROBES=y
+ CONFIG_JUMP_LABEL=y
+ CONFIG_MODULES=y
+ CONFIG_MODULE_UNLOAD=y
+@@ -1323,4 +1324,5 @@ CONFIG_SCHED_STACK_END_CHECK=y
+ CONFIG_DETECT_HUNG_TASK=y
+ CONFIG_DEBUG_ATOMIC_SLEEP=y
+ # CONFIG_RCU_TRACE is not set
++CONFIG_FTRACE_SYSCALLS=y
+ # CONFIG_RUNTIME_TESTING_MENU is not set
+diff --git a/arch/riscv/kernel/traps.c b/arch/riscv/kernel/traps.c
+index 865f191ab428..064763e2fef6 100644
+--- a/arch/riscv/kernel/traps.c
++++ b/arch/riscv/kernel/traps.c
+@@ -328,7 +328,7 @@ asmlinkage __visible __trap_section void do_trap_ecall_u(struct pt_regs *regs)
+ 		regs->orig_a0 = regs->a0;
+ 		regs->a0 = -ENOSYS;
+ 
+-		riscv_v_vstate_discard(regs);
++//riscv_v_vstate_discard(regs);
+ 
+ 		syscall = syscall_enter_from_user_mode(regs, syscall);
+ 
+-- 
+2.34.1
+

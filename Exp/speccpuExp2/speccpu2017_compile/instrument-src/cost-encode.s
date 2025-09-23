@@ -1,0 +1,14 @@
+	addi    sp,sp,-32
+        sd      a0,24(sp)
+        sd      a5,16(sp)
+	sub	a0,a0,zero
+	sub	a0,a0,zero
+	slli	a5,a0,1
+	add	a5,a5,a0
+	slli	a5,a5,1
+	srli	a5,a5,1
+	ld	a0,24(sp)
+	sext.w	a0,a0
+	ld      a0,24(sp)
+        ld      a5,16(sp)
+        addi    sp,sp,32

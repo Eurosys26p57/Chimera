@@ -1,0 +1,25 @@
+From 60b4c64131ff8bb63db9fb43839d59c7247f2622 Mon Sep 17 00:00:00 2001
+From: wyxaihjr <yuexiang.oerv@isrc.iscas.ac.cn>
+Date: Thu, 28 Aug 2025 06:42:56 +0000
+Subject: [PATCH 2/2] add version
+
+---
+ Makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Makefile b/Makefile
+index 611d7de2e3a2..6cf9b26ce6c6 100644
+--- a/Makefile
++++ b/Makefile
+@@ -2,7 +2,7 @@
+ VERSION = 6
+ PATCHLEVEL = 6
+ SUBLEVEL = 63
+-EXTRAVERSION =
++EXTRAVERSION = -bpfvector
+ NAME = Pinguïn Aangedreven
+ 
+ # *DOCUMENTATION*
+-- 
+2.34.1
+

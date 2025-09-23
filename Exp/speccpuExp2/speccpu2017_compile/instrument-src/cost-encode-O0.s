@@ -1,0 +1,40 @@
+	addi	sp,sp,-72
+	sd	a4,64(sp)
+	sd	a5,56(sp)
+	sd	s0,48(sp)
+	addi	s0,sp,72
+	li	a5,-2
+	sd	a5,-56(s0)
+	ld	a5,-56(s0)
+	nop
+	li	a5,0
+	nop
+	ld	a5,-56(s0)
+	sd	a5,-64(s0)
+	ld	a5,-56(s0)
+	sd	a5,-48(s0)
+	ld	a5,-48(s0)
+	nop
+	ld	a4,-56(s0)
+	mv	a5,a4
+	slli	a5,a5,1
+	add	a4,a5,a4
+	li	a5,-1
+	srli	a5,a5,1
+	and	a5,a4,a5
+	sd	a5,-40(s0)
+	ld	a5,-40(s0)
+	addi	a5,a5,-16
+	sd	a5,-32(s0)
+	ld	a5,-32(s0)
+	ld	a5,-64(s0)
+	sd	a5,-32(s0)
+	ld	a5,-32(s0)
+	sd	a5,-64(s0)
+	ld	a5,-64(s0)
+	sext.w	a5,a5
+	mv	a5,a4
+	ld	a4,64(sp)
+	ld	a5,56(sp)
+	ld	s0,48(sp)
+	addi	sp,sp,72
