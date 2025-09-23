@@ -19,9 +19,7 @@ sudo apt update
 sudo apt install qemu-system-misc
 ```
 
-Notes:
 - `qemu-system-misc` usually provides `qemu-system-riscv64`. If your distribution uses different package names, you may need `qemu-system` or other qemu packages.
-- If you plan to use OpenSBI or U-Boot from packages, install them in the next step.
 
 ---
 
@@ -38,24 +36,18 @@ wget https://old-releases.ubuntu.com/releases/focal/ubuntu-20.04.2-preinstalled-
 unxz -k ubuntu-20.04.2-preinstalled-server-riscv64.img.xz
 ```
 
-Notes:
 - `unxz -k` keeps the original `.xz` archive and produces `ubuntu-20.04.2-preinstalled-server-riscv64.img`.
-- Installed packages:
-  - `opensbi` provides firmware/firmware blobs often referenced by the run script.
-  - `u-boot-qemu` provides U-Boot images for certain QEMU setups.
-  - `qemu-utils` includes tools like `qemu-img`.
 
 ---
 
 ## 3. Run using the provided script
 
-If the project provides a script `run_qemu_riscv.sh`, run:
+The project provides a script `run_qemu_riscv.sh`, run:
 ```
 chmod +x run_qemu_riscv.sh
 ./run_qemu_riscv.sh start
 ```
 
-Notes:
 - Ensure the script is executable.
 - If the script fails, open it to see the exact `qemu-system-riscv64` command used. You can adapt or run that command manually (see the manual example below).
 
@@ -83,3 +75,4 @@ qemu-system-riscv64 \
   -device virtio-blk-device,drive=hd0 \
   -drive file=ubuntu-20.04.2-preinstalled-server
 ```
+
