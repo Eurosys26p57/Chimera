@@ -83,5 +83,3 @@ qemu-system-riscv64 \
   -device virtio-blk-device,drive=hd0 \
   -drive file=ubuntu-20.04.2-preinstalled-server
 ```
-
-CPU2017.001.fprate.refrate.csv  CPU2017.001.intrate.refrate.csv
