@@ -17,7 +17,7 @@ Results will be saved to the ./result directory.
 Run execution-time statistics (Figure 8a, Figure 8c, Figure 9):
 
 ```
-./stisticres.sh
+python statisticres.py
 ```
 
 Results will also be saved to the ./result directory.
