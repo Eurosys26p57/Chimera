@@ -1,6 +1,8 @@
 # Chimera: Transparent and High-Performance ISAX Heterogeneous Computing via Binary Rewriting
 
-Chimera is a transparent and high-performance heterogeneous computing system via binary rewriting. Chimera can run on RISC-V ISAX heterogeneous cpu platform and provides transparent task scheduling among cores with different extensions (e.g., RVGC cores and RVGCV cores).  Chimera has two parts:  Chimera-userspace (this repository) and Chimera-kernel(https://github.com/Eurosys26p57/Chimera-kernel). You can also get our artifact on https://zenodo.org/records/17072560.
+Chimera is a transparent and high-performance heterogeneous computing system via binary rewriting. Chimera can run on RISC-V ISAX heterogeneous cpu platform and provides transparent task scheduling among cores with different extensions (e.g., RVGC cores and RVGCV cores).  Chimera has two parts:  Chimera-userspace (this repository) and Chimera-kernel(https://github.com/Eurosys26p57/Chimera-kernel).
+
+![chimera](chimera.svg)
 
 ## Abstract
 
